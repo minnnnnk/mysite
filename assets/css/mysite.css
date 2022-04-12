@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+/************ 초기화 CSS ******************/
+/* 여백초기화 */
+body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, th, td, tr, 
+textarea, button, form {
+	margin: 0; padding: 0;
+	
+}
+/* 리스트초기화 */
+ul, ol {
+	list-style-type: none;
+	
+}
+
+body {
+	font-size: 14px;
+	font-family: "맑은 고딕", 돋움, 굴림;
+}
+/* 링크초기화 */
+a:link    {color: #000000; text-decoration: none;}/* 방문전 링크일때 자홍색 선없음 */
+a:visited {color: #000000; text-decoration: none;}/* 방문했던 링크일때 회색 위에선*/
+a:hover   {color: #000000; text-decoration: none;}/* 마우스오버일때 파란색 아래선 */
+a:active  {color: #000000; text-decoration: none;}/* 클릭했을때 빨간색 중앙선*/ 
+/* 클리어픽스 */
+/* clearfix */
+.clearfix{*zoom:1;}
+.clearfix:before, .clearfix:after {display: block; content: ""; line-height: 0;}
+.clearfix:after {clear: both;}
+
+
+.pointer {
+	cursor: pointer;
+}
+/*********************************** 초기화 **************************/
+
+/****************** 레이아웃 *********************/
+
+#wrap {
+	margin: 0px auto;
+	width: 1000px;
+}
+
+#wrap>#header { 
+	padding: 10px 0px 10px 0px;
+	border-bottom: 1px solid #bfbfbf;
+}
+
+
+#wrap>#nav {
+	/* background-color: #00ff00; */
+	padding: 10px 0px;
+	border-bottom: 1px solid #bfbfbf;
+}
+
+/* 가로 전체사용할떄 */
+#wrap>#full-contents {
+	/* background-color: #ff00ff; */
+	padding: 40px 20px 40px 20px;
+}
+
+/* 가로 서브메뉴 사용할때 */
+#wrap>#contents {
+	padding: 30px 0px 30px 0px;
+} 
+
+#wrap>#footer {
+	padding: 20px 0px 20px 0px;
+	background-color: #dddddd;
+} 
+
+/* #wrap>#footer {
+	height: 50px;
+	background-color: #dddddd;
+} */
+/*************** 헤더 (로고, 로그인 , 회원가입) ******************/
+
+#header h1 {
+	float: left;
+	color: #79B30B;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+#header ul {
+	float: right;
+	/* padding: 10px 0px 10px 0px; */
+	margin: 15px 0px 0px 0px;
+}
+
+#header ul>li {
+	float: left;
+	margin: 0px 0px 0px 20px; 
+	font-size: 14px;
+
+	
+}
+/*************** 내브  ******************/
+#nav>ul>li {
+	float: left;
+	width: 250px;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	/* padding: 10px 90px; 내가한거*/
+	
+}
+/*************** 컨텐츠 (서브메뉴 있을때)  ******************/
+
+#contents>#aside {
+	margin: 0px 0px 0px 10px;
+	float: left;
+	width: 170px;
+}
+
+#contents>#aside>h2 {
+	height: 60px;
+	line-height: 60px;
+	font-size: 20px;
+	text-align: center;
+	background-color: #dddddd;
+}
+
+#contents>#aside>ul>li {
+	padding: 5px 0px 0px 5px;
+	margin: 8px 0px 8px 0px;
+	border: 1px solid #a6a6a6;
+	font-size: 14px;
+}
+
+#contents>#main-content {
+	float: left;
+	width: 820px;
+	margin: 0px 0px 0px 10px;
+	padding: 18px 0px 0px 0px;
+}
+
+/* 메인컨텐츠 */
+
+#contents>#main-content>#main-content-header {
+	
+	border-bottom: 1px solid #bfbfbf;
+	
+}
+
+#contents>#main-content>#main-content-header>h3 {
+	font-size: 18px;
+	font-weight: bold;
+	
+}
+
+#contents>#main-content>#main-content-header>ul>li	{
+	
+}
+
+
+/*************** 푸터  ******************/
+#footer>div {
+	text-align:center;
+	font-size: 12px;
+}

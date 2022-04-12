@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+/************ 초기화 CSS ******************/
+/* 여백초기화 */
+body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, th, td, tr, 
+textarea, button, form {
+	margin: 0; padding: 0;
+	
+}
+/* 리스트초기화 */
+ul, ol {
+	list-style-type: none;
+	
+}
+/* 링크초기화 */
+a:link    {color: #000000; text-decoration: none;}/* 방문전 링크일때 자홍색 선없음 */
+a:visited {color: #000000; text-decoration: none;}/* 방문했던 링크일때 회색 위에선*/
+a:hover   {color: #000000; text-decoration: none;}/* 마우스오버일때 파란색 아래선 */
+a:active  {color: #000000; text-decoration: none;}/* 클릭했을때 빨간색 중앙선*/ 
+/* 클리어픽스 */
+/* clearfix */
+.clearfix{*zoom:1;}
+.clearfix:before, .clearfix:after {display: block; content: ""; line-height: 0;}
+.clearfix:after {clear: both;}
+
+/*********************************** 초기화 **************************/
+
+#wrap {
+	margin: 0px auto;
+	padding: 0px 10px;
+	width: 1000px;
+	border: 1px solid #000000;
+}
+
+#header {
+	border-bottom: 1px solid #bfbfbf;
+	padding: 10px 0px;
+}
+
+
+#header>h1 {
+	float: left;
+	font-size: 35px;
+	font-weight: bold;
+	color:  #79B30B;
+	
+}
+
+#header>ul {
+	float: right;
+	
+}
+
+#header>ul>li {
+	float: left;
+	padding: 20px 0px 0px 15px;
+	
+}
+
+#nav {
+	border-bottom: 1px solid #bfbfbf;
+}
+
+#nav>ul>li {
+	float: left;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px 85px;
+	margin: 0px 0px 0px 5px;
+}
+
+#contents {
+}
+
+#aside {
+	float: left;
+	width: 170px;
+	height: 400px;
+}
+
+#aside>h2	{
+	background-color: #dddddd;
+	text-align: center ;
+	margin: 20px 0px 5px 0px;
+	padding: 20px 0px;
+}
+
+#aside>ul>li {
+	margin: 5px 0px;
+	padding: 5px 0px 5px 5px;
+	text-align: left;
+	border: 1px solid #bfbfbf;
+}
+
+#main {
+	float: left;
+	width: 796px;
+	height: 400px;
+	padding: 20px 0px 0px 20px;
+	border: 1px solid #bfbfbf;
+	
+}
+
+.normal {
+	border: 1px solid #bfbfbf;
+}
+
+.normal>h2 {
+	
+	float:left;
+}	
+.normal>ul>li {
+	float: right;
+}
+
+.main-bef:before {
+	content: ">"
+}
+
+
